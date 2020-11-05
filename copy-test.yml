@@ -15,8 +15,8 @@
       mode: '0750'
         
   - name: Copy lssecfix db file for RHEL7
-    become: yes
-    become_method: sudo
+    #become: yes
+    #become_method: sudo
     copy:
       src: "{{ secfixdb_file_src }}"
       dest: "{{ secfixdb_file_dest }}"
